@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: Olli Vanhoja <olli.vanhoja@gmail.com>
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-![Bfree logo](/doc/images/logo_tn.png)
+![Bfree logo](doc/images/logo_tn.png)
 
 Bfree
 ======
@@ -18,7 +18,7 @@ will be ever implemented it will be totally opt-in. All the date remains
 in your browser, plain text, currently in local storage. This might be
 changed to something more secure in the future.
 
-![Free Ride mode](/doc/images/freeride.png)
+![Free Ride mode](doc/images/freeride.png)
 
 [Try Now](https://bfree.vercel.app/) at https://bfree.vercel.app/
 
@@ -87,7 +87,7 @@ NEXT_TELEMETRY_DISABLED=0 npm run build
 License
 -------
 
-See [LICENSE.txt](/LICENSE.txt) and SPDX notation in the repo.
+See [LICENSE.txt](LICENSE.txt) and SPDX notation in the repo.
 
 
 Related Work
