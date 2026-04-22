@@ -1,6 +1,6 @@
 [
     {
-        "id": "31f690d7ee5a4896",
+        "id": "5619322f20088159",
         "type": "tab",
         "label": "HomeTrainer | Groupe 2 - A",
         "disabled": false,
@@ -8,652 +8,9 @@
         "env": []
     },
     {
-        "id": "785b51c888e1ec8d",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io/1883",
-        "port": "8083",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "b5d22f4f8478e914",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "localhost/ws/speed",
-        "port": "1880",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "8879ede32cb83812",
-        "type": "websocket-listener",
-        "path": "/ws/speed",
-        "wholemsg": "false"
-    },
-    {
-        "id": "6a7f4bb529cf63bd",
-        "type": "websocket-listener",
-        "path": "/ws/angle",
-        "wholemsg": "false"
-    },
-    {
-        "id": "c4faf928a592f8c7",
-        "type": "mqtt-broker",
-        "name": "MosquittoRaspPi",
-        "broker": "192.168.0.227",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "95c338bedb281e80",
-        "type": "mqtt-broker",
-        "name": "MQTT qui fonctionne",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "8c57ec7dd636743e",
-        "type": "ui-base",
-        "name": "My Dashboard",
-        "path": "/dashboard",
-        "appIcon": "",
-        "includeClientData": true,
-        "acceptsClientConfig": [
-            "ui-notification",
-            "ui-control"
-        ],
-        "showPathInSidebar": false,
-        "headerContent": "page",
-        "navigationStyle": "default",
-        "titleBarStyle": "default",
-        "showReconnectNotification": true,
-        "notificationDisplayTime": 1,
-        "showDisconnectNotification": true,
-        "allowInstall": false
-    },
-    {
-        "id": "8a7eee67497c3c2d",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "1181d1a0f64df47a",
-        "type": "ui-page",
-        "name": "Tableau de bord HomeTrainer",
-        "ui": "8c57ec7dd636743e",
-        "path": "/page1",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "8a7eee67497c3c2d",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 1,
-        "className": "",
-        "visible": true,
-        "disabled": false
-    },
-    {
-        "id": "545970f6953b7a70",
-        "type": "ui-group",
-        "name": "Mesure fréquence cardiaque",
-        "page": "1181d1a0f64df47a",
-        "width": 6,
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "40f380241260898d",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "81e20ef19205ca04",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "bf0d420c83104f1f",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094ce",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "53e64c2c60350803",
-        "type": "mqtt-broker",
-        "name": "MQTT Broker",
-        "broker": "broker.emqx.io",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "8cbd4bd946a1b2ad",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "559d62bbdd446946",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "48f9d928ecc2f063",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094ce",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "5420cf4b88cc7d63",
-        "type": "mqtt-broker",
-        "name": "MQTT Broker",
-        "broker": "broker.emqx.io",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "1e35f1d5d642271c",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "c4b01f390d5d27bd",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.emqx.io",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "1c30d01013f38a8a",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094ce",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "47b9642335eaeb2a",
-        "type": "mqtt-broker",
-        "name": "MQTT Broker",
-        "broker": "broker.emqx.io",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
-        "id": "2da34dc42fe71b58",
-        "type": "ui-page",
-        "name": "Premiers essais",
-        "ui": "8c57ec7dd636743e",
-        "path": "/page2",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "8a7eee67497c3c2d",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 2,
-        "className": "",
-        "visible": "false",
-        "disabled": "false"
-    },
-    {
-        "id": "68f4e43f521f7cf8",
-        "type": "ui-group",
-        "name": "Premiers essais",
-        "page": "2da34dc42fe71b58",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": false,
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "4e083684d57c66c0",
-        "type": "ui-group",
-        "name": "Time",
-        "page": "1181d1a0f64df47a",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "bde96bfe50f9055f",
-        "type": "ui-spacer",
-        "group": "68f4e43f521f7cf8",
-        "name": "Premiers essais",
-        "tooltip": "",
-        "order": 1,
-        "width": 1,
-        "height": 1,
-        "className": ""
-    },
-    {
-        "id": "230732f6febb707c",
-        "type": "websocket-listener",
-        "path": "/ws/bpm",
-        "wholemsg": "false"
-    },
-    {
-        "id": "dbb8c3621d42d1de",
-        "type": "mqtt-broker",
-        "name": "Mosquitto Raspberry Pi",
-        "broker": "192.168.0.227",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "17212c109d88741a",
+        "id": "3140225b759c97e8",
         "type": "inject",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Coucou",
         "props": [
             {
@@ -675,14 +32,14 @@
         "y": 60,
         "wires": [
             [
-                "b11acaad3d79a37f"
+                "3be8e547df50044a"
             ]
         ]
     },
     {
-        "id": "b11acaad3d79a37f",
+        "id": "3be8e547df50044a",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -697,9 +54,9 @@
         "wires": []
     },
     {
-        "id": "01b80140034d1ff3",
+        "id": "72b1c424c18d3998",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "function 1",
         "func": "msg.payload = \"HEY !\"\nreturn msg;",
         "outputs": 1,
@@ -712,14 +69,14 @@
         "y": 120,
         "wires": [
             [
-                "b11acaad3d79a37f"
+                "3be8e547df50044a"
             ]
         ]
     },
     {
-        "id": "d53cb12a7ca1f3cb",
+        "id": "2d47336728470270",
         "type": "inject",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "props": [
             {
@@ -741,14 +98,14 @@
         "y": 120,
         "wires": [
             [
-                "01b80140034d1ff3"
+                "72b1c424c18d3998"
             ]
         ]
     },
     {
-        "id": "941bb7eeda2566ba",
+        "id": "d5b9087af91f5dca",
         "type": "mqtt in",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "name": "",
         "topic": "homeTrainerCastres/#",
@@ -763,14 +120,14 @@
         "y": 240,
         "wires": [
             [
-                "8414a85b7b0b1e72"
+                "13c63e37c83cfdef"
             ]
         ]
     },
     {
-        "id": "8414a85b7b0b1e72",
+        "id": "13c63e37c83cfdef",
         "type": "ui-text",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "group": "545970f6953b7a70",
         "order": 4,
@@ -793,9 +150,9 @@
         "wires": []
     },
     {
-        "id": "1b7957072a3baa8e",
+        "id": "bdd0ef01cea63ec8",
         "type": "mqtt in",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "name": "",
         "topic": "homeTrainerCastres/Group2-A/OIIA",
@@ -810,16 +167,16 @@
         "y": 380,
         "wires": [
             [
-                "4610bf695fb740ca",
-                "ae3244aec88a2788",
-                "b11acaad3d79a37f"
+                "06e271615e53b4c0",
+                "3adf32a6f52a3674",
+                "3be8e547df50044a"
             ]
         ]
     },
     {
-        "id": "4610bf695fb740ca",
+        "id": "06e271615e53b4c0",
         "type": "ui-notification",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "ui": "8c57ec7dd636743e",
         "position": "bottom right",
@@ -842,9 +199,9 @@
         ]
     },
     {
-        "id": "ae3244aec88a2788",
+        "id": "3adf32a6f52a3674",
         "type": "ui-text",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "group": "545970f6953b7a70",
         "order": 3,
@@ -867,30 +224,30 @@
         "wires": []
     },
     {
-        "id": "3b394b33a676ea90",
+        "id": "b30817c2572c5195",
         "type": "mqtt in",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "topic": "homeTrainerCastres/Group2-A/Coeur",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "dbb8c3621d42d1de",
+        "broker": "f81f86ed812818ae",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 150,
-        "y": 680,
+        "x": 230,
+        "y": 640,
         "wires": [
             [
-                "7253f2b53b4d7bfd"
+                "bf165e8d12132754"
             ]
         ]
     },
     {
-        "id": "253678c8df601ec3",
+        "id": "9653b82f7955814d",
         "type": "ui-gauge",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "group": "545970f6953b7a70",
         "order": 2,
@@ -947,16 +304,16 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 1130,
-        "y": 700,
+        "x": 1230,
+        "y": 620,
         "wires": [
             []
         ]
     },
     {
-        "id": "fcc2a462610730a2",
+        "id": "4e74bad2e4480e62",
         "type": "mqtt in",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "name": "",
         "topic": "homeTrainerCastres/Group1-A/HeartBeat",
@@ -971,14 +328,14 @@
         "y": 300,
         "wires": [
             [
-                "de724e454f04063f"
+                "cb20d688851c1d88"
             ]
         ]
     },
     {
-        "id": "de724e454f04063f",
+        "id": "cb20d688851c1d88",
         "type": "ui-gauge",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "d": true,
         "name": "",
         "group": "545970f6953b7a70",
@@ -1031,9 +388,9 @@
         ]
     },
     {
-        "id": "6ec37f34b1b71cf1",
+        "id": "e6f345645ae1fbf0",
         "type": "ui-chart",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "group": "545970f6953b7a70",
         "name": "BPM en fonction du temps (s)",
         "label": "chart",
@@ -1086,16 +443,16 @@
         "height": 8,
         "className": "",
         "interpolation": "linear",
-        "x": 1190,
-        "y": 800,
+        "x": 1270,
+        "y": 680,
         "wires": [
             []
         ]
     },
     {
-        "id": "8f8f98f14ff480ac",
+        "id": "b6085e5989a15ae6",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "storeBpm",
         "func": "let array = flow.get(\"bpm\");\n\narray.push(msg.payload);\n\nflow.set(\"bpm\", array);\n\nmsg.payload = array;\n\nreturn msg;",
         "outputs": 1,
@@ -1109,19 +466,19 @@
                 "module": "bpm"
             }
         ],
-        "x": 920,
-        "y": 880,
+        "x": 1060,
+        "y": 800,
         "wires": [
             [
-                "61f00765aea15a80",
-                "ab68423e4c5263b5"
+                "117db5dd962e7a1c",
+                "76fde13354e77209"
             ]
         ]
     },
     {
-        "id": "61f00765aea15a80",
+        "id": "117db5dd962e7a1c",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -1131,14 +488,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1260,
-        "y": 880,
+        "x": 1320,
+        "y": 800,
         "wires": []
     },
     {
-        "id": "ab68423e4c5263b5",
+        "id": "76fde13354e77209",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "calculateAverage",
         "func": "let array = flow.get(\"bpm\");\n\nlet total = 0;\n\nfor(let i = 0; i < array.length - 1; i++)\n{\n    total += array[i];\n}\n\nlet average = Math.round(total/array.length);\n\nflow.set(\"average\", average);\n\nmsg.payload = average;\nreturn msg;",
         "outputs": 1,
@@ -1147,19 +504,19 @@
         "initialize": "// Le code ajouté ici sera exécuté une fois\n// à chaque démarrage du noeud.\nflow.set(\"average\", 0);",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 1000,
+        "x": 1190,
+        "y": 960,
         "wires": [
             [
-                "58bdae23c0d8aa24",
-                "616e332627e687d6"
+                "47a639b49f49b14b",
+                "a79b2264051334fc"
             ]
         ]
     },
     {
-        "id": "58bdae23c0d8aa24",
+        "id": "47a639b49f49b14b",
         "type": "ui-text",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "group": "545970f6953b7a70",
         "order": 1,
         "width": 0,
@@ -1176,14 +533,14 @@
         "className": "",
         "value": "average",
         "valueType": "flow",
-        "x": 1360,
-        "y": 940,
+        "x": 1440,
+        "y": 900,
         "wires": []
     },
     {
-        "id": "616e332627e687d6",
+        "id": "a79b2264051334fc",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "AVERAGE BPM",
         "active": true,
         "tosidebar": true,
@@ -1193,36 +550,36 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1290,
-        "y": 1120,
+        "x": 1430,
+        "y": 1060,
         "wires": []
     },
     {
-        "id": "7d86f120100fb63b",
+        "id": "ad15150ee474afe0",
         "type": "mqtt in",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "topic": "homeTrainerCastres/Group2-A/Bouton",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "dbb8c3621d42d1de",
+        "broker": "f81f86ed812818ae",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 150,
-        "y": 1180,
+        "x": 230,
+        "y": 1140,
         "wires": [
             [
-                "2648c51923478ffd",
-                "d52e9bef93327b5d"
+                "3816a052e24b2c53",
+                "3ab0ff1a209693fc"
             ]
         ]
     },
     {
-        "id": "7f93bd0971d1dd8b",
+        "id": "36fb5dafb269ef3a",
         "type": "ui-notification",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "ui": "8c57ec7dd636743e",
         "position": "bottom left",
         "colorDefault": false,
@@ -1237,16 +594,16 @@
         "raw": false,
         "className": "",
         "name": "",
-        "x": 950,
-        "y": 1160,
+        "x": 1030,
+        "y": 1080,
         "wires": [
             []
         ]
     },
     {
-        "id": "2648c51923478ffd",
+        "id": "3816a052e24b2c53",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Début prise de pouls",
         "func": "if(msg.payload == \"Début de prise de pouls\")\n{\n    flow.set(\"applicationStopped\", false);\n    flow.set(\"stopMeasure\", false);\n    return msg;\n}",
         "outputs": 1,
@@ -1255,19 +612,19 @@
         "initialize": "// Le code ajouté ici sera exécuté une fois\n// à chaque démarrage du noeud.\nflow.set(\"duration\", 0);\nflow.set(\"timePassed\", 0);\nflow.set(\"bpm\", new Array());",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 1180,
+        "x": 560,
+        "y": 1140,
         "wires": [
             [
-                "7f93bd0971d1dd8b",
-                "a8a72a65ece2f488"
+                "36fb5dafb269ef3a",
+                "c460f68659af68af"
             ]
         ]
     },
     {
-        "id": "f92b5bfba1a53533",
+        "id": "5577d60c53a4c237",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "sendAverageBPMToClient",
         "func": "if(msg.payload == \"Stop measure\")\n{\n    let average = flow.get(\"average\");\n\n    msg.payload = average;\n    // ↓ A décommenter pour entendre la Marche Impériale\n    // msg.payload = 150;\n\n    return msg;\n}",
         "outputs": 1,
@@ -1276,18 +633,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 1600,
+        "x": 1270,
+        "y": 1520,
         "wires": [
             [
-                "c6d8a058685b0779"
+                "e3bf3b3424a095af"
             ]
         ]
     },
     {
-        "id": "efbde216f3a213d1",
+        "id": "96a9f45a9d6b5c44",
         "type": "ui-notification",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "ui": "8c57ec7dd636743e",
         "position": "bottom left",
         "colorDefault": false,
@@ -1302,16 +659,16 @@
         "raw": false,
         "className": "",
         "name": "",
-        "x": 1390,
-        "y": 1360,
+        "x": 1530,
+        "y": 1320,
         "wires": [
             []
         ]
     },
     {
-        "id": "c6d8a058685b0779",
+        "id": "e3bf3b3424a095af",
         "type": "mqtt out",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "topic": "homeTrainerCastres/Group2-A/AverageBPM",
         "qos": "2",
@@ -1321,15 +678,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "dbb8c3621d42d1de",
-        "x": 1450,
-        "y": 1600,
+        "broker": "f81f86ed812818ae",
+        "x": 1610,
+        "y": 1520,
         "wires": []
     },
     {
-        "id": "0f5cbeb96434d254",
+        "id": "21ed56349b1e0f02",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Show end prise de pouls",
         "func": "if(msg.payload == \"Stop measure\")\n{\n    // Message affiché dans la notif'\n    msg.payload = \"Fin de prise de pouls\";\n    return msg;\n}",
         "outputs": 1,
@@ -1338,18 +695,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 1360,
+        "x": 1270,
+        "y": 1320,
         "wires": [
             [
-                "efbde216f3a213d1"
+                "96a9f45a9d6b5c44"
             ]
         ]
     },
     {
-        "id": "a8a72a65ece2f488",
+        "id": "c460f68659af68af",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Timer",
         "func": "let timerRunning = flow.get(\"timerRunning\") || false;\nlet startTime = flow.get(\"startTime\") || 0;\nlet elapsedTime = flow.get(\"elapsedTime\") || 0;\nlet timePassed = flow.get(\"timePassed\") || 0;\n\nlet duration = parseInt(flow.get(\"duration\")) || 0;\nconsole.log(duration);\n\nlet stopMeasure = flow.get(\"stopMeasure\");\n\nif (msg.topic == \"duration\") {\n    let input = parseInt(msg.payload);\n    flow.set(\"duration\", input);\n\n    flow.set(\"valueProgressBar\", 0);\n\n    // Définition du pourcentage de la progress bar\n    let pourcentageProgressBar = parseFloat(100 / input);\n    console.log(\"pourcentageProgressBar : \" + pourcentageProgressBar);\n    flow.set(\"pourcentageProgressBar\", pourcentageProgressBar);\n    console.log(\"updatingBar : \" + flow.get(\"updatingBar\"));\n}\n\n// Si le bouton est pressé\nif (msg.payload === \"Début de prise de pouls\") {\n    // msg.payload = 0;\n    if (!timerRunning) {\n        // démarrer le timer\n        startTime = new Date().getTime();\n        timerRunning = true;\n        elapsedTime = 0;\n        flow.set(\"updatingBar\", true);\n        console.log(\"updatingBar : \" + flow.get(\"updatingBar\"));\n    }\n}\n/*else if(msg.payload === \"Fin de prise de pouls\")\n{\n    // arrêter le timer\n    elapsedTime = new Date().getTime() - startTime;\n    timerRunning = false;\n}*/\n\nif (timerRunning) {\n    console.log(\"timmer IS RUNNING OIIA\");\n    let time = Math.floor((new Date().getTime() - startTime) / 1000);\n    console.log(\"TIME : \" + time);\n    timePassed = time;\n}\nconsole.log(\"timePassed \" + timePassed)\nconsole.log('timePassed > duration')\nconsole.log(timePassed > duration)\nif(timerRunning == true && timePassed <= duration)// Envoie le temps actuel pour affichage\n{\n    console.log(\"Coucou\");\n    let time = Math.floor((new Date().getTime() - startTime) / 1000); // secondes écoulées\n    timePassed = time;\n\n    console.log(\"TIME PASSED : \" + timePassed);\n\n    flow.set(\"timeWithSeconds\", time + \"s\");\n}\nelse if(timePassed > duration && !stopMeasure) {\n    // arrêter le timer\n    elapsedTime = new Date().getTime() - startTime;\n    timerRunning = false;\n    //timePassed = 0\n    flow.set(\"timerRunning\", false)\n    flow.set(\"stopMeasure\", true)\n    console.log(\"stop mesure\" + flow.get(\"stopMeasure\"))\n}\n\n// Sauvegarde dans flow context\nflow.set(\"timerRunning\", timerRunning);\nflow.set(\"startTime\", startTime);\nflow.set(\"elapsedTime\", elapsedTime);\nflow.set(\"timePassed\", timePassed);\n\nreturn msg;",
         "outputs": 1,
@@ -1358,21 +715,21 @@
         "initialize": "// Le code ajouté ici sera exécuté une fois\n// à chaque démarrage du noeud.\nflow.set(\"pourcentageProgressBar\", 0);\nflow.set(\"updatingBar\", false);",
         "finalize": "// Le code ajouté ici sera exécuté lorsque le\n// noeud sera arrêté ou redéployé.\n// Pour définir le temps à 0 au déploiement du noeud !\nflow.set(\"timeWithSeconds\", \"0s\");\n\n// Pas sûre qu'il y ait besoin de return msg; | A tester\n// return msg;",
         "libs": [],
-        "x": 530,
-        "y": 1300,
+        "x": 710,
+        "y": 1240,
         "wires": [
             [
-                "4a0786ebe91c75b3",
-                "c85dbae6f304b731",
-                "e1580f6de765c8fe",
-                "0e2458c26e94cf14"
+                "fb3fa0c13073f005",
+                "902ec722f0a0ef3a",
+                "f7b0512c0e6132c8",
+                "7faf5f6e4041e1b0"
             ]
         ]
     },
     {
-        "id": "8161dec1d03afdf1",
+        "id": "b7b2a656f6a0fb10",
         "type": "inject",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "props": [
             {
@@ -1386,19 +743,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 70,
-        "y": 1280,
+        "x": 250,
+        "y": 1240,
         "wires": [
             [
-                "a8a72a65ece2f488"
+                "c460f68659af68af"
             ]
         ]
     },
     {
-        "id": "80f307f3e7cd8565",
+        "id": "e13a397702ee0657",
         "type": "ui-progress",
-        "z": "31f690d7ee5a4896",
-        "group": "4e083684d57c66c0",
+        "z": "5619322f20088159",
+        "group": "fb1d63b519ef8bb3",
         "name": "Barre de progression",
         "label": "Progress",
         "order": 3,
@@ -1406,15 +763,15 @@
         "height": 0,
         "color": "blue",
         "className": "",
-        "x": 1280,
-        "y": 1260,
+        "x": 1440,
+        "y": 1180,
         "wires": []
     },
     {
-        "id": "4a0786ebe91c75b3",
+        "id": "fb3fa0c13073f005",
         "type": "ui-text",
-        "z": "31f690d7ee5a4896",
-        "group": "4e083684d57c66c0",
+        "z": "5619322f20088159",
+        "group": "fb1d63b519ef8bb3",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -1430,14 +787,14 @@
         "className": "",
         "value": "timeWithSeconds",
         "valueType": "flow",
-        "x": 880,
-        "y": 1380,
+        "x": 1020,
+        "y": 1280,
         "wires": []
     },
     {
-        "id": "7253f2b53b4d7bfd",
+        "id": "bf165e8d12132754",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Filtre valeurs capteur pouls",
         "func": "if(msg.payload > 30 && msg.payload < 150)\n{\n    return msg;\n}",
         "outputs": 1,
@@ -1446,21 +803,21 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 680,
+        "x": 580,
+        "y": 640,
         "wires": [
             [
-                "253678c8df601ec3",
-                "6ec37f34b1b71cf1",
-                "8f8f98f14ff480ac",
-                "36e64304f314802c"
+                "9653b82f7955814d",
+                "e6f345645ae1fbf0",
+                "b6085e5989a15ae6",
+                "4ba9804b68d23669"
             ]
         ]
     },
     {
-        "id": "c85dbae6f304b731",
+        "id": "902ec722f0a0ef3a",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "debug 4",
         "active": true,
         "tosidebar": true,
@@ -1470,14 +827,14 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 1100,
+        "x": 980,
+        "y": 1000,
         "wires": []
     },
     {
-        "id": "5b9ac8d98101beba",
+        "id": "19d9413a5b6ba4c7",
         "type": "mqtt out",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "topic": "homeTrainerCastres/Group2-A/stopMeasure",
         "qos": "",
@@ -1487,15 +844,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "dbb8c3621d42d1de",
-        "x": 1310,
-        "y": 1460,
+        "broker": "f81f86ed812818ae",
+        "x": 1410,
+        "y": 1420,
         "wires": []
     },
     {
-        "id": "e1580f6de765c8fe",
+        "id": "f7b0512c0e6132c8",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "send stopMeasure Message to Arduino",
         "func": "let stopMeasure = flow.get(\"stopMeasure\");\nlet applicationStopped = flow.get(\"applicationStopped\");\n\n// Si on doit arrêter la mesure\n// Et que l'application n'a pas encore été arrêtée (tourne encore)\nconsole.log(\"message reçu de timer\")\nconsole.log(\"stop mesure\" + flow.get(\"stopMeasure\"))\nconsole.log(\"applicationStopped\" + applicationStopped)\nif(stopMeasure && !applicationStopped)\n{\n    console.log(\"arreter la mesure\")\n    flow.set(\"applicationStopped\", true);\n\n    msg.payload = \"Stop measure\";\n    return msg;\n}",
         "outputs": 1,
@@ -1504,20 +861,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 1460,
+        "x": 950,
+        "y": 1420,
         "wires": [
             [
-                "5b9ac8d98101beba",
-                "f92b5bfba1a53533",
-                "0f5cbeb96434d254"
+                "19d9413a5b6ba4c7",
+                "5577d60c53a4c237",
+                "21ed56349b1e0f02"
             ]
         ]
     },
     {
-        "id": "0e2458c26e94cf14",
+        "id": "7faf5f6e4041e1b0",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Update progress bar",
         "func": "// Float\nlet pourcentageProgressBar = flow.get(\"pourcentageProgressBar\");\nlet timePassed = flow.get(\"timePassed\");\n\n// Float\nlet valueProgressBar = parseFloat(timePassed * pourcentageProgressBar);\nlet updatingBar = flow.get(\"updatingBar\");\n\nconsole.log(\"pourcentageProgressBar : \" + pourcentageProgressBar);\nconsole.log(\"valueProgressBar\", valueProgressBar);\n\nif (!updatingBar && valueProgressBar == 0)\n{\n    msg.payload = 0;\n    return msg;\n}\nif (valueProgressBar <= 100 && updatingBar)\n{\n    console.log(\"updateBar !!!\");\n\n    // NEW\n    console.log(\"CURRENT PROGRESS BAR VALUE : \" + valueProgressBar);\n    msg.payload = valueProgressBar;\n\n    // Change progress bar color depending on valueProgressBar\n    /*if(valueProgressBar < 33)\n    {\n        msg.ui_update = {\n            // color: \"error\"\n            color: \"blue\"\n        };\n    }\n    else if(valueProgressBar > 33 && valueProgressBar < 66)\n    {\n        msg.ui_update = {\n            // color: \"warning\"\n            color: \"pink\"\n        };\n    }\n    else if (valueProgressBar > 66) {\n        msg.ui_update = {\n            // color: \"success\"\n            color: \"purple\"\n        };\n    }*/\n\n    /*if(valueProgressBar < 50)\n    {\n        msg.ui_update = {\n            color: \"blue\"\n        };\n    }\n    else if(valueProgressBar >= 50)\n    {\n        msg.ui_update = {\n            color: \"purple\"\n        };\n    }*/\n\n    msg.ui_update = {\n        color: \"blue\"\n    }\n\n    return msg;\n}\n// Si la barre ne vaut pas 100% et qu'on doit encore l'update\nelse if (valueProgressBar > 100 && updatingBar)\n{\n    flow.set(\"updatingBar\", false);\n    msg.payload = 100;\n    return msg;\n}",
         "outputs": 1,
@@ -1526,18 +883,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 1260,
+        "x": 1040,
+        "y": 1180,
         "wires": [
             [
-                "80f307f3e7cd8565"
+                "e13a397702ee0657"
             ]
         ]
     },
     {
-        "id": "162ff6e4b0d45381",
+        "id": "a77060629d426bdc",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "clearChart",
         "func": "if(msg.topic == \"duration\")\n{\n    msg.payload = [];\n    return msg;\n}",
         "outputs": 1,
@@ -1546,18 +903,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 860,
+        "x": 630,
+        "y": 820,
         "wires": [
             [
-                "6ec37f34b1b71cf1"
+                "e6f345645ae1fbf0"
             ]
         ]
     },
     {
-        "id": "05d981b48988975d",
+        "id": "9d3bd0c894175365",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "clear BPM and progress bar",
         "func": "if (msg.topic == \"duration\")\n{\n    msg.payload = 0;\n    return msg;\n}",
         "outputs": 1,
@@ -1566,19 +923,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 560,
-        "y": 760,
+        "x": 640,
+        "y": 720,
         "wires": [
             [
-                "253678c8df601ec3",
-                "80f307f3e7cd8565"
+                "9653b82f7955814d",
+                "e13a397702ee0657"
             ]
         ]
     },
     {
-        "id": "dbb541996a6bfdc8",
+        "id": "13ea2b0a1a01503c",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "clear average",
         "func": "if (msg.topic == \"duration\")\n{\n    flow.set(\"average\", 0);\n    return msg;\n}",
         "outputs": 1,
@@ -1587,20 +944,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 940,
+        "x": 660,
+        "y": 900,
         "wires": [
             [
-                "58bdae23c0d8aa24"
+                "47a639b49f49b14b"
             ]
         ]
     },
     {
-        "id": "012a577a1db1fc81",
+        "id": "80f62c034fe74370",
         "type": "ui-form",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Durée de prise de pouls (en secondes)",
-        "group": "4e083684d57c66c0",
+        "group": "fb1d63b519ef8bb3",
         "label": "",
         "order": 1,
         "width": 0,
@@ -1627,20 +984,20 @@
         "className": "",
         "passthru": false,
         "dropdownOptions": [],
-        "x": 150,
-        "y": 780,
+        "x": 230,
+        "y": 740,
         "wires": [
             [
-                "630c14604695a594",
-                "c7dc7f54c4d61947",
-                "d0bb83b935c2d392"
+                "d5f26e31919fd968",
+                "4e83bf427c7c7f57",
+                "a86831c438869c49"
             ]
         ]
     },
     {
-        "id": "630c14604695a594",
+        "id": "d5f26e31919fd968",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "debug 5",
         "active": true,
         "tosidebar": true,
@@ -1650,14 +1007,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
-        "y": 1000,
+        "x": 530,
+        "y": 500,
         "wires": []
     },
     {
-        "id": "c7dc7f54c4d61947",
+        "id": "4e83bf427c7c7f57",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Send real duration from form",
         "func": "if(msg.topic == \"duration\")\n{\n    let duration = parseInt(msg.payload.duration);\n    msg.payload = duration;\n    return msg;\n}",
         "outputs": 1,
@@ -1666,22 +1023,22 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 120,
-        "y": 1020,
+        "x": 200,
+        "y": 980,
         "wires": [
             [
-                "05d981b48988975d",
-                "162ff6e4b0d45381",
-                "dbb541996a6bfdc8",
-                "a8a72a65ece2f488",
-                "961b8b35868b5c23"
+                "9d3bd0c894175365",
+                "a77060629d426bdc",
+                "13ea2b0a1a01503c",
+                "c460f68659af68af",
+                "661e38fa3e67aae6"
             ]
         ]
     },
     {
-        "id": "b0aeb996aaf14993",
+        "id": "164e92f4d83d623a",
         "type": "ui-audio",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "group": "",
         "ui": "8c57ec7dd636743e",
         "name": "",
@@ -1694,16 +1051,16 @@
         "autoplay": "off",
         "loop": "off",
         "muted": "off",
-        "x": 960,
-        "y": 600,
+        "x": 1020,
+        "y": 520,
         "wires": [
             []
         ]
     },
     {
-        "id": "d0bb83b935c2d392",
+        "id": "a86831c438869c49",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Send Text to read",
         "func": "if(msg.topic == \"duration\")\n{\n    let duration = msg.payload.duration;\n    \n    msg.payload = \"Durée configurée à \" + duration + \" secondes. Appuyez sur le bouton pour commencer la mesure\";\n    return msg;\n}",
         "outputs": 1,
@@ -1712,18 +1069,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
-        "y": 600,
+        "x": 770,
+        "y": 520,
         "wires": [
             [
-                "b0aeb996aaf14993"
+                "164e92f4d83d623a"
             ]
         ]
     },
     {
-        "id": "961b8b35868b5c23",
+        "id": "661e38fa3e67aae6",
         "type": "function",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "clear chronometer",
         "func": "if(msg.topic == \"duration\")\n{\n    flow.set(\"timeWithSeconds\", \"0s\");\n    return msg;\n}",
         "outputs": 1,
@@ -1732,18 +1089,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
-        "y": 1120,
+        "x": 610,
+        "y": 1040,
         "wires": [
             [
-                "4a0786ebe91c75b3"
+                "fb3fa0c13073f005"
             ]
         ]
     },
     {
-        "id": "d52e9bef93327b5d",
+        "id": "3ab0ff1a209693fc",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "BUTTON PRESSED",
         "active": true,
         "tosidebar": true,
@@ -1753,30 +1110,30 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 1400,
+        "x": 560,
+        "y": 1320,
         "wires": []
     },
     {
-        "id": "36e64304f314802c",
+        "id": "4ba9804b68d23669",
         "type": "websocket out",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "Websocket BPM (pouls)",
-        "server": "230732f6febb707c",
+        "server": "ca09e5794ba58fda",
         "client": "",
-        "x": 1210,
-        "y": 620,
+        "x": 1250,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "d7f42ae3718cbddb",
+        "id": "7143e8697ef9cad5",
         "type": "mqtt in",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "",
         "topic": "homeTrainerCastres3/speed",
         "qos": "2",
         "datatype": "auto-detect",
-        "broker": "c4faf928a592f8c7",
+        "broker": "f81f86ed812818ae",
         "nl": false,
         "rap": true,
         "rh": 0,
@@ -1785,16 +1142,15 @@
         "y": 1700,
         "wires": [
             [
-                "107e4907bab9491e",
-                "0972b6cd8772459d",
-                "6c048c84647e0d96"
+                "582fce5dc53e9ba8",
+                "2f1330692e847faf"
             ]
         ]
     },
     {
-        "id": "107e4907bab9491e",
+        "id": "582fce5dc53e9ba8",
         "type": "debug",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -1804,34 +1160,1016 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 450,
+        "x": 470,
         "y": 1700,
         "wires": []
     },
     {
-        "id": "0972b6cd8772459d",
+        "id": "2f1330692e847faf",
         "type": "websocket out",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "WebSocketRaspberryVitesse",
-        "server": "8879ede32cb83812",
+        "server": "5ef0123b9aa98e28",
         "client": "",
-        "x": 520,
-        "y": 1820,
+        "x": 500,
+        "y": 1760,
         "wires": []
     },
     {
-        "id": "6c048c84647e0d96",
+        "id": "16521a468a37038b",
+        "type": "mqtt in",
+        "z": "5619322f20088159",
+        "name": "",
+        "topic": "hometrainer/MQTT",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1e0e974e156a8056",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 850,
+        "y": 120,
+        "wires": [
+            [
+                "8166cbd080446bee"
+            ]
+        ]
+    },
+    {
+        "id": "8166cbd080446bee",
+        "type": "debug",
+        "z": "5619322f20088159",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4973cab77820c546",
+        "type": "mqtt in",
+        "z": "5619322f20088159",
+        "name": "",
+        "topic": "homeTrainerCastres3/angle",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f81f86ed812818ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1860,
+        "wires": [
+            [
+                "6dcdc260360f4be1",
+                "dd18db3539040d64",
+                "f0b94c04e6c38a4c",
+                "bdd2fa8257e1f5c1"
+            ]
+        ]
+    },
+    {
+        "id": "6dcdc260360f4be1",
+        "type": "debug",
+        "z": "5619322f20088159",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "dd18db3539040d64",
         "type": "websocket out",
-        "z": "31f690d7ee5a4896",
+        "z": "5619322f20088159",
         "name": "WebSocketRaspberryAngle",
-        "server": "6a7f4bb529cf63bd",
+        "server": "1ca970fdf4d04c83",
         "client": "",
         "x": 520,
-        "y": 1920,
+        "y": 1900,
         "wires": []
     },
     {
-        "id": "2d9bac4241feb180",
+        "id": "f51e59b7d5e221c3",
+        "type": "inject",
+        "z": "5619322f20088159",
+        "name": "Init au démarrage",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "init",
+        "payload": "",
+        "payloadType": "str",
+        "x": 850,
+        "y": 1720,
+        "wires": [
+            [
+                "04fce184474f5de6"
+            ]
+        ]
+    },
+    {
+        "id": "91e3baf6c508562a",
+        "type": "inject",
+        "z": "5619322f20088159",
+        "name": "Reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "reset",
+        "payload": "",
+        "payloadType": "str",
+        "x": 870,
+        "y": 1780,
+        "wires": [
+            [
+                "04fce184474f5de6"
+            ]
+        ]
+    },
+    {
+        "id": "909c43797d75bcf3",
+        "type": "mqtt in",
+        "z": "5619322f20088159",
+        "name": "Messages Arduino (MQTT)",
+        "topic": "isisChallenge/borne/#",
+        "qos": "1",
+        "datatype": "utf8",
+        "broker": "f81f86ed812818ae",
+        "nl": false,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 830,
+        "y": 1860,
+        "wires": [
+            [
+                "5947175edc91ced7",
+                "04fce184474f5de6"
+            ]
+        ]
+    },
+    {
+        "id": "5947175edc91ced7",
+        "type": "debug",
+        "z": "5619322f20088159",
+        "name": "Messages bruts Arduino",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "04fce184474f5de6",
+        "type": "function",
+        "z": "5619322f20088159",
+        "name": "Comparer RSSI et décider la salle",
+        "func": "// État par défaut\nconst defaultRssi = { '101': -100, '107': -100, 'B012': -100 };\nconst defaultState = {\n    '101':  { room: '101',  present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' },\n    '107':  { room: '107',  present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' },\n    'B012': { room: 'B012', present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' }\n};\n\nlet rssiMap = flow.get('rssiMap') || JSON.parse(JSON.stringify(defaultRssi));\nlet state   = flow.get('roomState') || JSON.parse(JSON.stringify(defaultState));\n\n// ── Reset ou Init ─────────────────────────────────────────────\nif (msg.topic === 'reset' || msg.topic === 'init') {\n    rssiMap = JSON.parse(JSON.stringify(defaultRssi));\n    state   = JSON.parse(JSON.stringify(defaultState));\n    flow.set('rssiMap', rssiMap);\n    flow.set('roomState', state);\n\n} else {\n    // ── Extraire la salle depuis le topic ─────────────────────\n    // Topic : isisChallenge/borne/101  ou  /107  ou  /B012\n    const parts = msg.topic.split('/');\n    const room  = parts[parts.length - 1].toUpperCase();\n    const rssi  = parseInt(msg.payload);\n\n    if (isNaN(rssi)) {\n        node.warn('Payload non numérique : ' + msg.payload);\n        return null;\n    }\n\n    // Mettre à jour le RSSI de cette borne\n    rssiMap[room] = rssi;\n    flow.set('rssiMap', rssiMap);\n\n    // ── Comparer les RSSI pour décider la salle ───────────────\n    let bestRoom = null;\n    let bestRssi = -100;\n\n    Object.keys(rssiMap).forEach(r => {\n        if (rssiMap[r] > -100 && rssiMap[r] > bestRssi) {\n            bestRssi = rssiMap[r];\n            bestRoom = r;\n        }\n    });\n\n    // Remettre toutes les salles à Non détecté\n    Object.keys(state).forEach(r => {\n        state[r] = {\n            room: r,\n            present: false,\n            rssi: rssiMap[r] > -100 ? rssiMap[r] : null,\n            status: 'Non détecté',\n            device: 'Aucun appareil'\n        };\n    });\n\n    // Marquer uniquement la meilleure salle comme détectée\n    if (bestRoom) {\n        state[bestRoom] = {\n            room: bestRoom,\n            present: true,\n            rssi: bestRssi,\n            status: 'Validé ✅',\n            device: 'ISIS Beacon'\n        };\n    }\n\n    flow.set('roomState', state);\n}\n\nmsg.payload = {\n    title: 'Relais en duo',\n    rooms: [state['101'], state['107'], state['B012']],\n    rssiMap: rssiMap,\n    legend: {\n        ok:   'Badge détecté = passage validé',\n        wait: 'Aucun badge = en attente',\n        rssi: 'Plus le RSSI est proche de 0, plus le signal est fort'\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 1860,
+        "wires": [
+            [
+                "ef6c1ea1a6c326bd",
+                "d9651e5612bd7776",
+                "da9d9ccaadf988b6"
+            ]
+        ]
+    },
+    {
+        "id": "da9d9ccaadf988b6",
+        "type": "function",
+        "z": "5619322f20088159",
+        "name": "JSON string pour WS",
+        "func": "msg.payload = JSON.stringify(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1440,
+        "y": 1920,
+        "wires": [
+            [
+                "3a7cc047d2639cb1"
+            ]
+        ]
+    },
+    {
+        "id": "3a7cc047d2639cb1",
+        "type": "websocket out",
+        "z": "5619322f20088159",
+        "name": "WebSocket OUT",
+        "server": "f83a40347e019f93",
+        "client": "",
+        "x": 1650,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "d72e571b4853fdaf",
+        "type": "websocket in",
+        "z": "5619322f20088159",
+        "name": "WebSocket IN",
+        "server": "f83a40347e019f93",
+        "client": "",
+        "x": 830,
+        "y": 2000,
+        "wires": [
+            [
+                "96fa341bdbd9e024"
+            ]
+        ]
+    },
+    {
+        "id": "96fa341bdbd9e024",
+        "type": "function",
+        "z": "5619322f20088159",
+        "name": "Envoyer état au nouveau client",
+        "func": "const state = flow.get('roomState') || {\n    '101':  { room: '101',  present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' },\n    '107':  { room: '107',  present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' },\n    'B019': { room: 'B012', present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' }\n};\nmsg.payload = JSON.stringify({\n    title: 'Relais en duo',\n    rooms: [state['101'], state['107'], state['B012']],\n    legend: {\n        ok:   'Badge détecté = passage validé',\n        wait: 'Aucun badge = en attente',\n        rssi: 'Plus le RSSI est proche de 0, plus le signal est fort'\n    }\n});\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 2000,
+        "wires": [
+            [
+                "3a7cc047d2639cb1"
+            ]
+        ]
+    },
+    {
+        "id": "d9651e5612bd7776",
+        "type": "debug",
+        "z": "5619322f20088159",
+        "name": "Etat envoyé au dashboard",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1570,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "ef6c1ea1a6c326bd",
+        "type": "ui-template",
+        "z": "5619322f20088159",
+        "group": "78340748043bc767",
+        "page": "",
+        "ui": "",
+        "name": "Dashboard Relais en duo",
+        "order": 1,
+        "width": "12",
+        "height": "12",
+        "head": "",
+        "format": "<template>\n  <div class=\"relais-page\">\n    <div class=\"hero\">\n      <div>\n        <h1>{{ title }}</h1>\n        <p>Suivi des passages — la personne est localisée dans la salle avec le meilleur signal.</p>\n      </div>\n      <div class=\"ws-status\" :class=\"wsConnected ? 'connected' : 'disconnected'\">\n        <span class=\"ws-dot\"></span>\n        {{ wsConnected ? 'WebSocket connecté' : 'WebSocket déconnecté' }}\n      </div>\n    </div>\n\n    <div class=\"cards-grid\">\n      <div v-for=\"room in rooms\" :key=\"room.room\" class=\"room-card\" :class=\"room.present ? 'detected' : 'waiting'\">\n        <div class=\"card-top\">\n          <div>\n            <div class=\"room-label\">Salle</div>\n            <div class=\"room-number\">{{ room.room }}</div>\n          </div>\n          <div class=\"badge\" :class=\"room.present ? 'ok' : 'pending'\">{{ room.status }}</div>\n        </div>\n        <div class=\"info-block\">\n          <div class=\"info-line\">\n            <span class=\"label\">Présence</span>\n            <span class=\"value\">{{ room.present ? 'Oui ✅' : 'Non' }}</span>\n          </div>\n          <div class=\"info-line\">\n            <span class=\"label\">Appareil</span>\n            <span class=\"value device\">{{ room.device }}</span>\n          </div>\n          <div class=\"info-line\">\n            <span class=\"label\">RSSI</span>\n            <span class=\"value\" :class=\"room.rssi !== null ? rssiClass(room.rssi) : ''\">\n              {{ room.rssi !== null ? room.rssi + ' dBm' : '--' }}\n            </span>\n          </div>\n        </div>\n      </div>\n    </div>\n\n  \n  </div>\n</template>\n\n<script>\nexport default {\n  data() {\n    return {\n      title: 'Relais en duo',\n      rooms: [\n        { room: '101',  present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' },\n        { room: '107',  present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' },\n        { room: 'B012', present: false, rssi: null, status: 'En attente', device: 'Aucun appareil' }\n      ],\n      wsConnected: false\n    }\n  },\n  methods: {\n    rssiClass(rssi) {\n      if (rssi >= -60) return 'rssi-strong';\n      if (rssi >= -75) return 'rssi-medium';\n      return 'rssi-weak';\n    },\n    applyData(data) {\n      if (data && data.rooms) {\n        this.title = data.title || 'Relais en duo';\n        this.rooms = data.rooms;\n      }\n    }\n  },\n  mounted() {\n    this.$watch(() => this.msg, (newMsg) => {\n      if (newMsg && newMsg.payload) this.applyData(newMsg.payload);\n    }, { deep: true, immediate: true });\n    try {\n      this.$socket = new WebSocket('ws://192.168.0.227:1880/ws/salles');\n      this.$socket.onopen    = () => { this.wsConnected = true; };\n      this.$socket.onclose   = () => { this.wsConnected = false; };\n      this.$socket.onerror   = () => { this.wsConnected = false; };\n      this.$socket.onmessage = (event) => {\n        try { this.applyData(JSON.parse(event.data)); }\n        catch(e) { console.error('WS parse error', e); }\n      };\n    } catch(e) { console.error('WS init error', e); }\n  },\n  beforeUnmount() {\n    if (this.$socket) this.$socket.close();\n  }\n}\n</script>\n\n<style>\n  .relais-page { padding: 10px; font-family: Arial, sans-serif; background: linear-gradient(180deg, #eef7ff 0%, #f8fbff 100%); min-height: 100%; }\n  .hero { background: linear-gradient(135deg, #1565c0 0%, #42a5f5 100%); color: white; border-radius: 20px; padding: 22px; margin-bottom: 18px; box-shadow: 0 10px 24px rgba(21,101,192,0.18); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }\n  .hero h1 { margin: 0 0 6px 0; font-size: 30px; font-weight: 700; }\n  .hero p  { margin: 0; opacity: 0.95; font-size: 15px; }\n  .ws-status { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.15); }\n  .ws-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }\n  .connected .ws-dot { background: #69f0ae; }\n  .disconnected .ws-dot { background: #ff5252; }\n  .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 18px; }\n  .room-card { background: #fff; border-radius: 18px; padding: 18px; box-shadow: 0 8px 18px rgba(15,76,129,0.10); border: 2px solid #dbeafe; transition: transform 0.2s ease; }\n  .room-card.detected { border-color: #64b5f6; box-shadow: 0 10px 22px rgba(66,165,245,0.22); background: #f0f9ff; }\n  .room-card:hover { transform: translateY(-2px); }\n  .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }\n  .room-label { color: #5f7ea3; font-size: 13px; margin-bottom: 4px; }\n  .room-number { color: #0d47a1; font-size: 28px; font-weight: 800; }\n  .badge { padding: 8px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; }\n  .badge.ok { background: #1b8f3a; color: #fff; }\n  .badge.pending { background: #f1f7ff; color: #6b8bb3; border: 1px solid #d6e8ff; }\n  .info-block { display: flex; flex-direction: column; gap: 10px; }\n  .info-line { display: flex; justify-content: space-between; align-items: center; background: #f8fbff; border: 1px solid #e3f0ff; border-radius: 12px; padding: 10px 14px; }\n  .label { color: #4e6f96; font-weight: 600; font-size: 13px; }\n  .value { color: #123d7a; font-weight: 700; text-align: right; font-size: 13px; }\n  .device { color: #1565c0; font-size: 12px; }\n  .rssi-strong { color: #1b8f3a; }\n  .rssi-medium { color: #e65100; }\n  .rssi-weak   { color: #c62828; }\n  .legend { background: #fff; border-radius: 18px; padding: 18px; border: 2px solid #dbeafe; box-shadow: 0 8px 18px rgba(15,76,129,0.08); }\n  .legend h3 { margin-top: 0; margin-bottom: 12px; color: #0d47a1; }\n  .legend-line { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; color: #315b8a; font-weight: 500; }\n  .dot { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex-shrink: 0; }\n  .dot.ok { background: #42a5f5; }\n  .dot.wait { background: #bcdcff; }\n  .dot.info { background: #1565c0; }\n</style>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1580,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d166d6f676193e6b",
+        "type": "mqtt in",
+        "z": "5619322f20088159",
+        "name": "",
+        "topic": "hometrainer/spo2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f81f86ed812818ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 2140,
+        "wires": [
+            [
+                "d53ae50126743032",
+                "420b5617c011bd03",
+                "cdab3299b4a89425",
+                "322d5137073e535c"
+            ]
+        ]
+    },
+    {
+        "id": "d53ae50126743032",
+        "type": "websocket out",
+        "z": "5619322f20088159",
+        "name": "WebSocketSpO2",
+        "server": "ws_spo2_listener",
+        "client": "",
+        "x": 440,
+        "y": 2160,
+        "wires": []
+    },
+    {
+        "id": "420b5617c011bd03",
+        "type": "debug",
+        "z": "5619322f20088159",
+        "name": "debug spo2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 410,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "3e2f3d353d51891e",
+        "type": "mqtt in",
+        "z": "5619322f20088159",
+        "name": "",
+        "topic": "hometrainer/temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f81f86ed812818ae",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 2420,
+        "wires": [
+            [
+                "c9027e5c2c6fcd45",
+                "6889dc864182a2f2",
+                "1bbfe52e1a7bbbab"
+            ]
+        ]
+    },
+    {
+        "id": "c9027e5c2c6fcd45",
+        "type": "websocket out",
+        "z": "5619322f20088159",
+        "name": "WebSocketTemperature",
+        "server": "ws_temp_listener",
+        "client": "",
+        "x": 460,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "6889dc864182a2f2",
+        "type": "debug",
+        "z": "5619322f20088159",
+        "name": "debug temp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 420,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "cdab3299b4a89425",
+        "type": "ui-gauge",
+        "z": "5619322f20088159",
+        "name": "SpO2 Gauge",
+        "group": "f6b3aeda0f6beadf",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "SpO2",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "90",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "95",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "100",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "80",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 420,
+        "y": 2220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "322d5137073e535c",
+        "type": "ui-chart",
+        "z": "5619322f20088159",
+        "group": "f6b3aeda0f6beadf",
+        "name": "SpO2 chart",
+        "label": "SpO2 (%) -- mise à jour toutes les 4s",
+        "order": 3,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "{HH}:{mm}:{ss}",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "80",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "50",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 420,
+        "y": 2280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bbfe52e1a7bbbab",
+        "type": "ui-text",
+        "z": "5619322f20088159",
+        "group": "f6b3aeda0f6beadf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temp Text",
+        "label": "Température capteur",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 420,
+        "y": 2500,
+        "wires": []
+    },
+    {
+        "id": "f0b94c04e6c38a4c",
+        "type": "ui-gauge",
+        "z": "5619322f20088159",
+        "name": "Angle Guidon Gauge",
+        "group": "282af5fbf82d91d4",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Angle Guidon",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-30",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "-10",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "value"
+            },
+            {
+                "from": "10",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-30",
+        "max": "30",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 500,
+        "y": 1960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdd2fa8257e1f5c1",
+        "type": "ui-chart",
+        "z": "5619322f20088159",
+        "group": "282af5fbf82d91d4",
+        "name": "Angle Chart",
+        "label": "Angle guidon (°) dans le temps",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "linear",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-30",
+        "ymax": "30",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "200",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 470,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95c338bedb281e80",
+        "type": "mqtt-broker",
+        "name": "MQTT qui fonctionne",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "545970f6953b7a70",
+        "type": "ui-group",
+        "name": "Mesure fréquence cardiaque",
+        "page": "1181d1a0f64df47a",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8c57ec7dd636743e",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "f81f86ed812818ae",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Raspberry Pi",
+        "broker": "192.168.0.227",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fb1d63b519ef8bb3",
+        "type": "ui-group",
+        "name": "Time",
+        "page": "1181d1a0f64df47a",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ca09e5794ba58fda",
+        "type": "websocket-listener",
+        "path": "/ws/bpm",
+        "wholemsg": "false"
+    },
+    {
+        "id": "5ef0123b9aa98e28",
+        "type": "websocket-listener",
+        "path": "/ws/speed",
+        "wholemsg": "false"
+    },
+    {
+        "id": "1e0e974e156a8056",
+        "type": "mqtt-broker",
+        "name": "HomeTrainer",
+        "broker": "192.168.0.227",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1ca970fdf4d04c83",
+        "type": "websocket-listener",
+        "path": "/ws/angle",
+        "wholemsg": "false"
+    },
+    {
+        "id": "f83a40347e019f93",
+        "type": "websocket-listener",
+        "path": "/ws/salles",
+        "wholemsg": "false"
+    },
+    {
+        "id": "78340748043bc767",
+        "type": "ui-group",
+        "name": "Relais en Duo dashboard",
+        "page": "ec5e06b495946058",
+        "width": "12",
+        "height": "12",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ws_spo2_listener",
+        "type": "websocket-listener",
+        "path": "/ws/spo2",
+        "wholemsg": "false"
+    },
+    {
+        "id": "ws_temp_listener",
+        "type": "websocket-listener",
+        "path": "/ws/temp",
+        "wholemsg": "false"
+    },
+    {
+        "id": "f6b3aeda0f6beadf",
+        "type": "ui-group",
+        "name": "Oxymètre",
+        "page": "1181d1a0f64df47a",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "282af5fbf82d91d4",
+        "type": "ui-group",
+        "name": "Angle - Guidon",
+        "page": "1181d1a0f64df47a",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1181d1a0f64df47a",
+        "type": "ui-page",
+        "name": "Tableau de bord HomeTrainer",
+        "ui": "8c57ec7dd636743e",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "8a7eee67497c3c2d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "ec5e06b495946058",
+        "type": "ui-page",
+        "name": "Relais en duo",
+        "ui": "8c57ec7dd636743e",
+        "path": "/relais-en-duo",
+        "icon": "bluetooth_searching",
+        "layout": "grid",
+        "theme": "b09f8556d308b420",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "8a7eee67497c3c2d",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "b09f8556d308b420",
+        "type": "ui-theme",
+        "name": "Bleu Blanc",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#1565c0",
+            "bgPage": "#eaf4ff",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cfe3ff"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "16px",
+            "groupGap": "16px",
+            "groupBorderRadius": "16px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "512d47e872e58d82",
         "type": "global-config",
         "env": [],
         "modules": {
