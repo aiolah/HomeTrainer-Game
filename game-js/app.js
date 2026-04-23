@@ -203,7 +203,7 @@ wsSalles.onmessage = function (event) {
           let timeOutRoomDetected = mapSalles.get(roomName);
           console.log(roomName + " timeout = " + timeOutRoomDetected);
 
-          // Si les 30 secondes depuis la dernière détection ne sont pas passées, on n'affiche rien
+          // Si la salle n'a  pas déjà été détectée, on l'affiche
           if(!timeOutRoomDetected)
           {
             console.log("Salle " + roomName + " détectée !!!!");
@@ -213,8 +213,6 @@ wsSalles.onmessage = function (event) {
             addFloatingText(`Salle ${roomName} détectée ! +100`, "turquoise");
             doorBellSound.play();
             score += 100;
-
-            console.log("Timer de 30 secondes débuté : détection suspendue");
           }
         }
       }
